@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/flaticon.svg"
+      type="image/x-icon"
+    />
+    <!-- css link  -->
+    <link rel="stylesheet" href="./assets/css/libary.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <!-- css link  -->
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome link  -->
+
+    <title>Bookshy</title>
+  </head>
+  <body>
+    <!-- loading  -->
+    <div class="loading">
+      <img src="./assets/images/loading.gif" alt="" />
+    </div>
+    <!-- loading  -->
+    <!-- navbar  -->
+    <nav id="nav">
+      <div class="container navbar">
+        <div class="logo">
+          <h2 class="logo-main">Booksy 📚</h2>
+        </div>
+        <div class="search-book">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="search by author,title,name"
+          />
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <ul class="login row">
+          <li>
+            <a href="" class="login-item cart-value"
+              ><i class="fas fa-cart-arrow-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="login-item"><i class="far fa-user"></i></a>
+          </li>
+        </ul>
+
+        <div class="sidebar">
+          <li>
+            <a href="#open" class="openMenu" onclick="handleMenu()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#close" class="closeMenu hidden" onclick="handleMenu()">
+              <i class="far fa-window-close"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar  -->
+    <!-- header section  -->
+    <header>
+      <div class="container">
+        <ul class="nav-list row">
+          <li>
+            <a href="" class="nav-item activeMenu" onclick="handleMenu()"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#popular" class="nav-item" onclick="handleMenu()"
+              >Bestseller</a
+            >
+          </li>
+          <li>
+            <a href="#top-seller" class="nav-item" onclick="handleMenu()"
+              >Trending</a
+            >
+          </li>
+          <li>
+            <a href="#subscription" class="nav-item" onclick="handleMenu()"
+              >Subscription</a
+            >
+          </li>
+          <li>
+            <a href="#footer" class="nav-item" onclick="handleMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- header section  -->
+    <!-- hero section  -->
+    <section class="hero" id="home">
+      <div class="container hero-container row">
+        <div class="hero-info">
+          <h1 class="hero-title">Build Your Own Libary</h1>
+          <p class="hero-text">
+            Buy two selected book & get 40% discount & a bookmarks
+          </p>
+          <button class="btn hero-btn">Buy Now</button>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/images/Header-img.svg" alt="" class="hero-image" />
+        </div>
+      </div>
+    </section>
+    <!-- hero section  -->
+    <!-- popular section  -->
+    <section id="popular">
+      <div class="popular-container container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Most Ratted Books <br />
+            This Year...
+          </h2>
+        </div>
+        <div class="book-container">
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 1.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 8.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Harry Potter</h3>
+            <p class="author-name">J.K. Rowling</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 7.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 6.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 5.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 4.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 3.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/Slide10 3-1.png"
+              alt=""
+              class="card-image"
+            />
+            <h3 class="card-title">Atomic Habit</h3>
+            <p class="author-name">James Clear</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="card-btn">
+              <h4 class="price">19.54$</h4>
+              <span class="buy-btn">
+                <i class="fas fa-cart-arrow-down"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular section  -->
+    <!-- top seller section  -->
+    <section id="top-seller">
+      <div class="popular-container container top-selling-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Most Selling Books <br />
+            This Year...
+          </h2>
+          <div class="book-container">
+            <div class="card">
+              <img src="./assets/images/Book-1.png" alt="" class="card-image" />
+              <h3 class="card-title">Atomic Habit</h3>
+              <p class="author-name">James Clear</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="card-btn">
+                <h4 class="price">19.54$</h4>
+                <span class="buy-btn">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/images/Sublet Art.png"
+                alt=""
+                class="card-image"
+              />
+              <h3 class="card-title">Atomic Habit</h3>
+              <p class="author-name">James Clear</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="card-btn">
+                <h4 class="price">19.54$</h4>
+                <span class="buy-btn">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/images/Slide10 8.png"
+                alt=""
+                class="card-image"
+              />
+              <h3 class="card-title">Atomic Habit</h3>
+              <p class="author-name">James Clear</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="card-btn">
+                <h4 class="price">19.54$</h4>
+                <span class="buy-btn">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/images/Slide10 6.png"
+                alt=""
+                class="card-image"
+              />
+              <h3 class="card-title">Atomic Habit</h3>
+              <p class="author-name">James Clear</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="card-btn">
+                <h4 class="price">19.54$</h4>
+                <span class="buy-btn">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top seller section  -->
+    <!-- subscription section  -->
+    <section id="subscription">
+      <div class="subscription-container container">
+        <h1 class="subscription-title">GET INSTANT DISCOUNT FOR MEMBERSHIP</h1>
+        <h4 class="subscription-subtitle">
+          Subscribe our and get all latest news abot our latest products,
+          promotions, offers and discount
+        </h4>
+        <form action="" class="subscribe-form">
+          <input
+            type="email"
+            name="email"
+            id="subscribe-mail"
+            placeholder="example@email.com"
+            required
+          />
+          <input type="submit" value="Subscribe" id="subscribe-btn" />
+        </form>
+      </div>
+    </section>
+    <!-- subscription section  -->
+    <!-- top rating section  -->
+    <section id="top-rating"></section>
+    <!-- top rating section  -->
+    <!-- footer section  -->
+    <footer id="footer">
+      <div class="container footer-container row">
+        <div class="footer">
+          <h2 class="footer-logo address">Booksy</h2>
+          <a
+            href="https://goo.gl/maps/pX5V7pRYh13gJH5z7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="address-btn"
+            >1418 River Drive, Suite<br />Cottonhall, CA 9622 US</a
+          >
+          <a
+            href="mailto:sale@bookworm.com
+
+          "
+            >sale@bookworm.com
+          </a>
+          <a
+            href="tel:++1 246-345-0695
+        "
+            >+1 246-345-0695
+          </a>
+
+          <div class="footer-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
+        <div class="footer customer_service">
+          <h3 class="footer-title">Customer Service</h3>
+          <ul class="footer-link">
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Returns Product</a></li>
+            <li><a href="">Product Stock</a></li>
+            <li><a href="">Pickup Point</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer">
+          <h3 class="footer-title">Explore More</h3>
+          <ul class="footer-link">
+            <li><a href="">About us</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Bookmarks</a></li>
+            <li><a href="">Sign in/Join</a></li>
+            <li><a href="">Company Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="top">
+      <a href="#nav" class="fas fa-arrow-up"></a>
+    </div>
+    <!-- footer section  -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

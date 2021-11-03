@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --green: hsl(155, 49%, 65%);
+  --ash: hsl(0, 0%, 95%);
+  --white: hsl(0, 0%, 100%);
+  --yellow: #c29a58;
+  --yellowLight: hsl(47, 100%, 83%);
+  --black: hsl(0, 0%, 0%);
+  --cardBg: rgba(188, 143, 147, 0.1);
+  --boxShadow: 0px 4px 4px hsla(0, 0%, 0%, 0.1);
+
+  /* font property */
+  --fontMain: "Poppins", sans-serif;
+  --xl: 3rem;
+  --large: 2rem;
+  --md: 2rem;
+  --sm: 1.5rem;
+  --mini: 1rem;
+  --borderRadius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: var(--fontMain);
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+input {
+  outline: none;
+  border: transparent;
+  font-family: var(--fontMain);
+}
+i {
+  color: var(--black);
+}
+nav {
+  width: 100%;
+  background: var(--ash);
+}
+.hero {
+  width: 100%;
+  background: var(--ash);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1980px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: transparent;
+  background-color: var(--green);
+  padding: 10px;
+  min-width: 120px;
+}
+
+.card {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 10px;
+  background-color: var(--ash);
+  padding: 15px 0;
+  border-radius: var(--borderRadius);
+  -webkit-border-radius: var(--borderRadius);
+  -moz-border-radius: var(--borderRadius);
+  -ms-border-radius: var(--borderRadius);
+  -o-border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+}
+
+.card-image {
+  width: 70%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.card-title {
+  font-weight: 600;
+  padding-top: 10px;
+  color: var(--yellow);
+}
+.author-name {
+  color: var(--green);
+}
+
+.book-name {
+  font-size: var(--sm);
+  font-weight: 500;
+}
+
+.headline {
+  font-size: var(--large);
+}
+.hidden {
+  display: none;
+}
