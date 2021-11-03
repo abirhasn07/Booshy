@@ -143,6 +143,7 @@
   }
   .hero-title {
     padding-top: 0;
+      font-size: var(--md);
   }
   .hero-text {
     width: 90%;
